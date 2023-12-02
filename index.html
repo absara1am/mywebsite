@@ -219,7 +219,7 @@
         <div class="main-container">
             <h3 style="text-align: center;">Get in touch</h3>
 
-            <form id="contact-form">
+            <form id="contact-form" target="_blank" action="https://formsubmit.co/workwithabsar@gmail.com" method="POST">
                 <label>Name</label>
                 <input class="input-field" type="text" name="name">
 
@@ -227,12 +227,15 @@
                 <input class="input-field" type="text" name="subject">
 
                 <label>Email</label>
-                <input class="input-field" type="text" name="email">
+                <input class="input-field" type="email" required name="email">
 
                 <label>Message</label>
                 <textarea class="input-field" name="message"></textarea>
 
-                <input id="submit-btn" type="submit" value="Send">
+                <input id="submit-btn" type="submit">
+
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://absara1am.github.io/mywebsite/thankyou.html">
             </form>
 
         </div>
